@@ -18,4 +18,15 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+    
+    /**
+     * @Route("/ejercicio-1", name="homepage")
+     */
+    public function ejercicioUnoAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/ejercicio_1.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
 }
