@@ -1,5 +1,11 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/variables.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+{% endblock %}
+
 {% block body %}
     <div class="container">
         <h2> Lista sin estilos de Bootstrap </h2>
@@ -49,12 +55,8 @@
                 A caption for the above image
                 A caption for the above image.
             </figcaption>
-            <img src="{{ asset('assets/img/bavarian-forest.jpg') }}" class="figure-img img-fluid img-thumbnail rounded float-left" 
-                 alt="A generic square placeholder image with rounded corners in a figure.">
-            <figcaption class="figure-caption">A caption for the above image.</figcaption>
-            <img src="{{ asset('assets/img/bavarian-forest.jpg') }}" class="figure-img img-fluid rounded" 
-                 alt="A generic square placeholder image with rounded corners in a figure.">
-            <figcaption class="figure-caption">A caption for the above image.</figcaption>
         </figure>
+                 
+        <h3 class="texto-rosa">H3 en rosa</h3>
     </div><!-- content container -->
 {% endblock %}
