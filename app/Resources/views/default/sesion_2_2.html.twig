@@ -4,10 +4,8 @@
     {{ parent() }}
     <style>
         .item {
-            background: #4EF04E;
+            background: #f0ad4e;
             text-align: center;
-            width: 150px;
-            height: 30px;
             border: 1px solid white;
         }
     </style>
@@ -15,12 +13,13 @@
 
 {% block body %}
     <div class="container bg-danger">
-        <div class="bg-info" style="height:100vh">
-            <div class="item float-left">Wordpress</div>
-            <div class="item float-left">Prestashop</div>
-            <div class="item float-left">Android</div>
-            <div class="item float-right">PWA</div>
-            <div class="item float-right">Symfony PHP</div>
+        <div class="bg-info d-flex">
+            <div class="item pt-2 pb-2 d-sm-none d-md-none">Wordpress</div>
+            <div class="item">Prestashop</div>
+            <div class="item bg-danger">Magento</div>
+            <div class="item">Android</div>
+            <div class="item">iOS</div>
+            <div class="item">Bootstrap</div>
         </div>
     </div><!-- container -->
 {% endblock %}
