@@ -29,4 +29,48 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+    
+    /**
+     * @Route("/sesion-2", name="sesion_2")
+     */
+    public function sesionDosAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/sesion_2.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
+    
+    /**
+     * @Route("/sesion-2-1", name="sesion_2")
+     */
+    public function sesionDosUnoAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/sesion_2_1.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
+    
+    /**
+     * @Route("/sesion-2-2", name="sesion_2")
+     */
+    public function sesionDosDosAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/sesion_2_2.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
+    
+    /**
+     * @Route("/sesion-2-layout-theme", name="sesion_2_layout_theme")
+     */
+    public function sesionDosLayoutThemeAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/sesion_2_layout_theme.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
 }

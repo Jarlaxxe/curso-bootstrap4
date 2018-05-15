@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <style>
+        .item {
+            background: #f0ad4e;
+            text-align: center;
+            border: 1px solid white;
+        }
+    </style>
+{% endblock %}
+
+{% block body %}
+    <div class="container bg-danger">
+        <div class="bg-info d-flex">
+            <div class="item pt-2 pb-2 d-sm-none d-md-none">Wordpress</div>
+            <div class="item">Prestashop</div>
+            <div class="item bg-danger">Magento</div>
+            <div class="item">Android</div>
+            <div class="item">iOS</div>
+            <div class="item">Bootstrap</div>
+        </div>
+    </div><!-- container -->
+{% endblock %}
+
+
