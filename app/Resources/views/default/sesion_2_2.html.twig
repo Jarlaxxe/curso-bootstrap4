@@ -14,13 +14,17 @@
 {% endblock %}
 
 {% block body %}
-    <div class="container bg-danger">
-        <div class="bg-info d-flex justify-content-between" style="height:100vh">
-            <div class="item">Wordpress</div>
-            <div class="item">Prestashop</div>
-            <div class="item">Android</div>
-            <div class="item">PWA</div>
-            <div class="item">Symfony PHP</div>
+    <div class="container bg-danger clearfix">
+        <div class="bg-info" style="height:100vh">
+            <div class="float-left d-flex d-inline-block">
+                <div class="item">Wordpress</div>
+                <div class="item">Prestashop</div>
+                <div class="item">Android</div>
+            </div>
+            <div class="float-right d-flex d-inline-block">
+                <div class="item">PWA</div>
+                <div class="item">Symfony PHP</div>
+            </div>
         </div>
     </div><!-- container -->
 {% endblock %}
