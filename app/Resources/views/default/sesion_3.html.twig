@@ -1,7 +1,58 @@
 {% extends 'base.html.twig' %}
 
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+{% endblock %}
 {% block body %}
+
+    <!-- Light mobile first-->
+    <nav class="navbar bg-light navbar-light">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Inicio</a>
+            <!-- en caso de li, se hace asi-->
+            <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+            <a class="nav-item nav-link" href="#">Cursos</a>
+            <a class="nav-item nav-link" href="#">Servicios</a>
+            <a class="nav-item nav-link" href="#">Equipo</a>
+            <a class="nav-item nav-link disabled" href="#">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Dark -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <div class="container">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Inicio</a>
+                <!-- en caso de li, se hace asi-->
+                <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+                <a class="nav-item nav-link" href="#">Cursos</a>
+                <a class="nav-item nav-link" href="#">Servicios</a>
+                <a class="nav-item nav-link" href="#">Equipo</a>
+                <a class="nav-item nav-link disabled" href="#">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <section class="col-12">
+                <h2>What else?</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by injected humour, 
+                    or randomised words which don't look even slightly believable. 
+                    If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything 
+                    embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the 
+                    Internet tend to repeat predefined chunks as necessary, making this the first 
+                    true generator on the Internet. It uses a dictionary of over 200 Latin words, 
+                    combined with a handful of model sentence structures, to generate Lorem Ipsum which looks 
+                    reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
+                    injected humour, or non-characteristic words etc.</p>
+            </section>
+        </div>
+    </div>
+
     <div class="container-fluid">
+
         <div class="row">
             <section class="col-12">
                 <ul class="nav justify-content-left">
@@ -23,7 +74,7 @@
                 </ul>
             </section>
         </div><!-- row -->
-        
+
         <div class="row mt-3">
             <section class="col-12">
                 <ul class="nav nav-tabs justify-content-end">
@@ -68,7 +119,7 @@
             </section>
         </div><!-- row -->
 
-        
+
 
         <div class="row mt-3">
             <section class="col-12">

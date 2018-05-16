@@ -11,3 +11,7 @@ and open the template in the editor.
 .texto-rosa{
     color: var(--rosa);
 }
+
+.bg-dark{
+    background-color: red !important;
+}
