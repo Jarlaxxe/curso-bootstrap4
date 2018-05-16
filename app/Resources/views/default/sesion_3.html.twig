@@ -1,0 +1,310 @@
+{% extends 'base.html.twig' %}
+
+{% block stylesheets %}
+    {{ parent() }}
+    <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+
+{% endblock %}
+{% block body %}
+
+    <div class="container">
+        <div class="row">
+            <section class="col-12">
+
+                <h2>Types</h2>
+                <a href="#" role="button" class="btn btn-outline-dark">Link</a>
+                <button type="submit" class="btn btn-xs btn-primary">Button</button>
+                <input type="button" value="Input" class="btn btn-success" disabled="disabled">
+                
+                <h2>Contextual Classes</h2>
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn btn-secondary">Secondary</button>
+                <button class="btn btn-success">Success</button>
+                <button class="btn btn-danger">Danger</button>
+                <button class="btn btn-warning">Warning</button>
+                <button class="btn btn-info">Info</button>
+                <button class="btn btn-light">Light</button>
+                <button class="btn btn-dark">Dark</button>
+
+                <h2>Outline</h2>
+                <button class="btn btn-outline-primary">Primary</button>
+                <button class="btn btn-outline-secondary">Secondary</button>
+                <button class="btn btn-outline-success">Success</button>
+                <button class="btn btn-outline-danger">Danger</button>
+                <button class="btn btn-outline-warning">Warning</button>
+                <button class="btn btn-outline-info">Info</button>
+                <button class="btn btn-outline-light">Light</button>
+                <button class="btn btn-outline-dark">Dark</button>
+
+                <h2>Sizes</h2>
+                <button class="btn">Default</button>
+                <button class="btn btn-lg">Large</button>
+                <button class="btn btn-sm">Small</button>
+                <button class="btn btn-block">Block</button>
+
+                <h2>States</h2>
+                <h3>Active</h3>
+                <button class="btn" active>Active Button</button>
+
+                <h3>Disabled</h3>
+                <button class="btn" disabled>Disabled Button</button>
+                <a href="#" class="btn disabled">Disabled Link Button</a>
+
+
+            </section>
+        </div><!-- row -->
+    </div><!-- content container -->
+    
+    <br>
+    <br>
+
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">Pixelpro</a>
+            <div class="navbar-nav ml-sm-auto">
+                <a class="nav-item nav-link active" href="#">Inicio</a>
+
+                <div class="dropdown">
+                    <a class="nav-item nav-link dropdown-toggle"
+                       data-toggle="dropdown" id="cursos"
+                       aria-haspopup="true" aria-expanded="false"
+                       href="#">Cursos</a>
+
+                    <div class="dropdown-menu" aria-labelledby="cursos">
+                        <a class="dropdown-item" href="#">Mobile Apps</a>
+                        <a class="dropdown-item" href="#">Wordpress</a>
+                        <a class="dropdown-item" href="#">Prestashop</a>
+                    </div>
+                </div>
+                <!--empieza aqui el dropdown https://developer.mozilla.org/es/docs/Web/Accessibility/ARIA -->
+
+                <div class="dropdown">
+                    <a class="nav-item nav-link dropdown-toggle"
+                       data-toggle="dropdown" id="serviciosArea"
+                       aria-haspopup="true" aria-expanded="false"
+                       href="#">Servicios</a>
+
+                    <div class="dropdown-menu" aria-labelledby="serviciosArea">
+                        <a class="dropdown-item" href="#">Mobile Apps</a>
+                        <a class="dropdown-item" href="#">Wordpress</a>
+                        <a class="dropdown-item" href="#">Prestashop</a>
+                    </div>
+                </div>
+                <a class="nav-item nav-link" href="#">Equipo</a>
+                <a class="nav-item nav-link disabled" href="#">Contacto</a>
+            </div>
+            <form class="form-inline">
+                <input class="form-control mr-2" type="text" placeholder="Buscar">
+                <button class="btn btn-outline-light" type="submit">Ir</button>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <section class="col-12">
+                <h2>What else?</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by injected humour, 
+                    or randomised words which don't look even slightly believable. 
+                    If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything 
+                    embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the 
+                    Internet tend to repeat predefined chunks as necessary, making this the first 
+                    true generator on the Internet. It uses a dictionary of over 200 Latin words, 
+                    combined with a handful of model sentence structures, to generate Lorem Ipsum which looks 
+                    reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
+                    injected humour, or non-characteristic words etc.</p>
+            </section>
+        </div>
+    </div>
+
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <div class="container">
+            <a class="navbar-brand d-none d-sm-inline d-sm-block" href="#">Pixelpro</a>
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Inicio</a>
+                <a class="nav-item nav-link" href="#">Cursos</a>
+                <a class="nav-item nav-link" href="#">Servicios</a>
+                <a class="nav-item nav-link" href="#">Equipo</a>
+                <a class="nav-item nav-link disabled" href="#">Contacto</a>
+            </div>
+            <span class="navbar-text d-none d-sm-inline d-sm-block">Hola mundo!</span>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <section class="col-12">
+                <h2>What else?</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by injected humour, 
+                    or randomised words which don't look even slightly believable. 
+                    If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything 
+                    embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the 
+                    Internet tend to repeat predefined chunks as necessary, making this the first 
+                    true generator on the Internet. It uses a dictionary of over 200 Latin words, 
+                    combined with a handful of model sentence structures, to generate Lorem Ipsum which looks 
+                    reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
+                    injected humour, or non-characteristic words etc.</p>
+            </section>
+        </div>
+    </div>
+
+    <!-- Light mobile first-->
+    <nav class="navbar bg-light navbar-light">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Inicio</a>
+            <!-- en caso de li, se hace asi-->
+            <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+            <a class="nav-item nav-link" href="#">Cursos</a>
+            <a class="nav-item nav-link" href="#">Servicios</a>
+            <a class="nav-item nav-link" href="#">Equipo</a>
+            <a class="nav-item nav-link disabled" href="#">Contacto</a>
+        </div>
+    </nav>
+
+    <!-- Dark -->
+    <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
+        <div class="container">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Inicio</a>
+                <!-- en caso de li, se hace asi-->
+                <li class="nav-item"><a class="nav-link" href="#">Cursos</a></li>
+                <a class="nav-item nav-link" href="#">Cursos</a>
+                <a class="nav-item nav-link" href="#">Servicios</a>
+                <a class="nav-item nav-link" href="#">Equipo</a>
+                <a class="nav-item nav-link disabled" href="#">Contacto</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <section class="col-12">
+                <h2>What else?</h2>
+                <p>There are many variations of passages of Lorem Ipsum available, 
+                    but the majority have suffered alteration in some form, by injected humour, 
+                    or randomised words which don't look even slightly believable. 
+                    If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything 
+                    embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the 
+                    Internet tend to repeat predefined chunks as necessary, making this the first 
+                    true generator on the Internet. It uses a dictionary of over 200 Latin words, 
+                    combined with a handful of model sentence structures, to generate Lorem Ipsum which looks 
+                    reasonable. The generated Lorem Ipsum is therefore always free from repetition, 
+                    injected humour, or non-characteristic words etc.</p>
+            </section>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+
+        <div class="row">
+            <section class="col-12">
+                <ul class="nav justify-content-left">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contacto</a>
+                    </li>
+                </ul>
+            </section>
+        </div><!-- row -->
+
+        <div class="row mt-3">
+            <section class="col-12">
+                <ul class="nav nav-tabs justify-content-end">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contacto</a>
+                    </li>
+                </ul>
+            </section>
+        </div><!-- row -->
+
+        <div class="row mt-3">
+            <section class="col-12">
+                <ul class="nav nav-pills d-flex justify-content-around">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cursos de programación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contacto</a>
+                    </li>
+                </ul>
+            </section>
+        </div><!-- row -->
+
+
+
+        <div class="row mt-3">
+            <section class="col-12">
+                <ul class="nav justify-content-left">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contacto</a>
+                    </li>
+                </ul>
+            </section>
+        </div><!-- row -->
+
+        <div class="row mt-3 d-flex">
+            <section class="col-12">
+                <ul class="nav justify-content-left flex-column flex-sm-row">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Equipo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link disabled">Contacto</a>
+                    </li>
+                </ul>
+            </section>
+        </div><!-- row -->
+    </div><!-- content container -->
+{% endblock %}
