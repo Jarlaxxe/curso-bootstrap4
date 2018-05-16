@@ -3,12 +3,12 @@
 {% block stylesheets %}
     {{ parent() }}
     <link rel="stylesheet" href="{{ asset('assets/css/custom.css') }}">
+    
 {% endblock %}
 {% block body %}
-    
     <nav class="navbar bg-dark navbar-dark navbar-expand-sm">
           <div class="container">
-            <a class="navbar-brand" href="#">Pixelpro</a>
+            <a class="navbar-brand d-none d-sm-inline d-sm-block" href="#">Pixelpro</a>
             <div class="navbar-nav">
               <a class="nav-item nav-link active" href="#">Inicio</a>
               <a class="nav-item nav-link" href="#">Cursos</a>
@@ -16,7 +16,7 @@
               <a class="nav-item nav-link" href="#">Equipo</a>
               <a class="nav-item nav-link disabled" href="#">Contacto</a>
             </div>
-            <span class="navbar-text">Hola mundo!</span>
+            <span class="navbar-text d-none d-sm-inline d-sm-block">Hola mundo!</span>
           </div>
         </nav>
         <div class="container">
