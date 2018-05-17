@@ -8,7 +8,61 @@
 
 {% block body %}
     <div class="container">
-        <div class="jumbotron">
+
+        <h2>Formulario contacto</h2>
+        <!-- Nunca crees un campo de formulario sin un label,
+          si necesitas que no se vea, puedes usar sr-only -->
+
+        <form class="form">
+
+            <fieldset>
+                <legend>Info</legend>
+
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" class="form-control" placeholder="Your Name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" id="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">Somos muy buena gente, no compartimos ni vendemos tu info con nadie</small>
+                </div>
+
+            </fieldset>
+            <fieldset>
+                <legend>curso Info</legend>
+                <div class="form-group">
+                    <label for="curso">Curso</label>
+                    <select id="cursotype" class="form-control">
+                        <option>Choose</option>
+                        <option value="mobile">Mobile</option>
+                        <option value="front">Frontend</option>
+                        <option value="full">Fullstack</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">Comentario</label>
+                    <textarea id="comment" class="form-control" rows="3"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>¿Tiene usted experiencia previa?</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="radio" class="form-check-input" name="spayneut" value="yes" checked>
+                    <label class="form-check-label">Si</label>
+                </div>
+                <div class="form-group form-check">
+                    <input type="radio" class="form-check-input" name="spayneut" value="no"> 
+                    <label class="form-check-label">No</label>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-outline-success">Enviar</button>
+        </form>
+
+        <div class="jumbotron mt-5">
             <h1 class="display-4">Hello, world!</h1>
             <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
             <hr class="my-4">
