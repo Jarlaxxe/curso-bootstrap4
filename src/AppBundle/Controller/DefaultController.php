@@ -84,4 +84,15 @@ class DefaultController extends Controller
             'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
         ]);
     }
+    
+    /**
+     * @Route("/sesion-4", name="sesion_4")
+     */
+    public function sesionCuatroAction(Request $request)
+    {
+        // replace this example code with whatever you need
+        return $this->render('default/sesion_4.html.twig', [
+            'base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+        ]);
+    }
 }
