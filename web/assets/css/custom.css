@@ -1,15 +1,20 @@
 h3 {
-  color: aqua; }
+    color: aqua; }
 
 h4 {
-  background-color: blue; }
+    background-color: blue; }
 
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 16-may-2018, 18:25:08
-    Author     : Jarlaxxxe
-*/
+/*body{
+    background: #A9A9A9;
+    padding-top: 30px;
+}
+.main-section{
+    padding: 15px;
+    background:#f1f1f1;
+}
+.custom-file-control::after {
+    content: "Choose file...";
+}
+.custom-file-control::before {
+    content: "Browse";
+}*/
