@@ -4,6 +4,13 @@ h3 {
 h4 {
     background-color: blue; }
 
+carousel.img{
+    width: auto;
+    height: 225px;
+    max-height: 225px;
+    
+}
+
 /*body{
     background: #A9A9A9;
     padding-top: 30px;
