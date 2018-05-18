@@ -9,6 +9,8 @@
 {% block body %}
     <div class="container">
         <div class="row mt-5">
+
+            <h1>Tooltips</h1>
             <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
                 Tooltip on top
             </button>
@@ -21,6 +23,20 @@
             <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
                 Tooltip on left
             </button>
+        </div>
+        <div class="row mt-5">
+            <div class="col-12">
+                <h2>Formulario contacto</h2>
+                <!-- Nunca crees un campo de formulario sin un label,
+                  si necesitas que no se vea, puedes usar sr-only -->
+
+                <button type="button" class="btn btn-warning" data-toggle="popover" data-placement="right" title="Nueva LOPD"
+                        data-content="¡Cuidado con tus datos!">
+                    ¡Nueva LOPD!
+                </button>
+
+                
+            </div>
         </div>
     </div>
 {% endblock %}
